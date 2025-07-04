@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Taufic - Software developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+        }
+        
+        body {
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        
+        .navbar {
+            background-color: var(--secondary-color);
+            padding: 15px 0;
+            width: 100%;
+            height: 10%;
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white ;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-top:20px ;
+            padding: 100px 0;
+            display: flex;
+            width: 100%;
+            height: 60%;
+        }
+        .hero-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+    
+
+.about-img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+        
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: var(--secondary-color);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .about-content {
+            line-height: 1.8;
+        }
+        
+        .skill-badge {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 0.9rem;
+        }
+        
+        .portfolio-item {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .portfolio-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .portfolio-tech {
+            margin-top: 15px;
+        }
+        
+        .tech-badge {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .education-item {
+            padding: 20px;
+            border-left: 3px solid var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-form .form-control {
+            margin-bottom: 20px;
+            padding: 12px;
+            border-radius: 5px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 10px 30px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .heroSectionFirst{
+            width: 70%;
+            padding-left: 100px;
+
+            
+        }
+        .heroSectionSecend{
+            width: 30%;
+        }
+        .hero-section-img{
+            width: 70%;
+            height: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Raj Taufic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+             <div class="heroSectionFirst">     
+                   <h1 class="hero-title">HI! I'M Raj Taufic</h1>
+                   <h2 class="hero-subtitle">Software Developer || Machine Learning Engineer || Programmer</h2>
+                  <div class="d-flex  gap-3">
+                     <a href="#contact" class="btn btn-light btn-lg">Hire Me</a>
+                     <a href="#" class="btn btn-outline-light btn-lg">Download Resume</a>
+                   </div>
+            </div>
+
+           <div class="heroSectionSecend">
+                  <img class="hero-section-img" src="image/20210114_172813.jpg" alt="Raj Taufic" class="img-fluid hero-image">
+          </div>
+    </section>
+      <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/600x400" alt="IUBAT" class="img-fluid portfolio-img">
+                        <div class="p-4">
+                            <h3>IUBAT University</h3>
+                            <p>
+                               A top-ranked private university in Bangladesh offering international-standard
+                               programs in engineering, business, agriculture, and technology. Known for its
+                                global collaborations, research initiatives, and industry-aligned curriculum 
+                                that prepares career-ready graduates. Features a dynamic campus with modern 
+                                facilities and enriching student experiences.
+                            </p>
+                            <p>
+                                Anyone can apply to study in IUBAT.Because, its scenic beauty, campus, trees are beautiful. 
+                                Specially, its very beautiful for its academic excellence.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="badge bg-primary tech-badge">React</span>
+                                <span class="badge bg-primary tech-badge">Firebase</span>
+                                <span class="badge bg-primary tech-badge">HTML</span>
+                                <span class="badge bg-primary tech-badge">CSS</span>
+                                <span class="badge bg-primary tech-badge">Node</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-lg-6">
+                    <div class="portfolio-item">
+            <img src="https://via.placeholder.com/600x400" alt="Service" class="img-fluid portfolio-img">
+                        <div class="p-4">
+                            <h3>Association and visitor</h3>
+                            <p>
+                               Becides study, I have a one association namely "Manush manusher jonno". 
+                               When I goes to my village, I am working there with poor people by giving
+                                money and others. Around five people working there. When, we are staying
+                                outside of our village, then, others member maintain that. In two Eid festival
+                                and others time also we are helping poor people.
+                            </p>
+                            <p>
+                                Also I love to explore the area around my district. I love to familiar with 
+                                culture,people and others by celebration. Sometimes its becoming hard. Because
+                                of money.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="badge bg-primary tech-badge">React</span>
+                                <span class="badge bg-primary tech-badge">Firebase</span>
+                                <span class="badge bg-primary tech-badge">HTML</span>
+                                <span class="badge bg-primary tech-badge">CSS</span>
+                                <span class="badge bg-primary tech-badge">Node</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View More Projects</a>
+            </div>
+        </div>
+    </section>   
+    <section id="skills" class="py-5 bg-light">
+         <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            
+                <div class="col-md-4">
+                    <h4 class="mb-4">Expertise:</h4>
+                    <div>
+                        <span class="badge bg-primary skill-badge">React.js</span>                       
+                        <span class="badge bg-primary skill-badge">Node.js</span>
+                        <span class="badge bg-primary skill-badge">Express.js</span>
+                        <span class="badge bg-primary skill-badge">HTML</span>
+                        <span class="badge bg-primary skill-badge">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">Comfortable:</h4>
+                    <div>
+                        <span class="badge bg-success skill-badge">SQL</span>
+                        <span class="badge bg-success skill-badge">Redux</span>
+                        <span class="badge bg-success skill-badge">Socket.io</span>
+                        <span class="badge bg-success skill-badge">AWS</span>
+                        <span class="badge bg-success skill-badge">Docker</span>
+                        <span class="badge bg-success skill-badge">TypeScript</span>
+                        <span class="badge bg-success skill-badge">Next.js</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">Familiar:</h4>
+                    <div>
+                        <span class="badge bg-secondary skill-badge">C++</span>
+                        <span class="badge bg-secondary skill-badge">Python</span>
+                        <span class="badge bg-secondary skill-badge">Machine Learning</span>
+                    </div>
+                    <h4 class="mt-4 mb-4">Tools:</h4>
+                    <div>
+                        <span class="badge bg-info text-dark skill-badge">VS Code</span>
+                        <span class="badge bg-info text-dark skill-badge">Google Colab</span>
+                        <span class="badge bg-info text-dark skill-badge">Jupyter Notebook</span>
+                        <span class="badge bg-info text-dark skill-badge">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="about-content">
+                        I am an enthusiastic Software developer with knowledge of some frameworks for the 
+                        frontend and the backend. I know Basic PHP and MySQL but basically a MERN 
+                        developer.
+                    </p>
+                    <p class="about-content">
+                        I have experience building web applications using modern technologies and always eager 
+                        to learn new skills to enhance my development capabilities.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="education-item">
+                        <h4>B.Sc in CSE</h4>
+                        <h5>IUBAT (Sector 10, Uttara, Dhaka)</h5>
+                        <p class="text-muted">2022-2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="please type your name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="please type your Email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" rows="5" placeholder="Type here message" required></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+            <p class="mb-0">Copyright © 2023 | Raj Taufic</p>
+            <p class="mb-0">Sector 10, Uttara, Dhaka</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
